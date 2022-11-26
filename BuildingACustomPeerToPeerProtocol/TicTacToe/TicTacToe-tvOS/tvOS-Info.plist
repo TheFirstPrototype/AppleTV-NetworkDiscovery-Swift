@@ -9,14 +9,14 @@
 			<dict>
 				<key>NSApplicationServiceIdentifier</key>
 				<string>TicTacToe</string>
-				<key>NSApplicationServiceUsageDescription</key>
-				<string>TicTacToe allows you to use your nearby device to play against the TV.</string>
 				<key>NSApplicationServicePlatformSupport</key>
 				<array>
 					<string>iOS</string>
 					<string>iPadOS</string>
 					<string>watchOS</string>
 				</array>
+				<key>NSApplicationServiceUsageDescription</key>
+				<string>TicTacToe allows you to use your nearby device to play against the TV.</string>
 			</dict>
 		</array>
 	</dict>
