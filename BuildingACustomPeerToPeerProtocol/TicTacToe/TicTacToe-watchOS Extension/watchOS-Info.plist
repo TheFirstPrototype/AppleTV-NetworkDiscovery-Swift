@@ -17,7 +17,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.tfp.TicTacToe.watchkitapp</string>
+			<string>com.tfp.rockpaperscissors${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>

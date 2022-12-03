@@ -13,6 +13,7 @@ class PeerListViewController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
+        print("AWAKE Saamer")
         // Listen immediately upon startup.
         applicationServiceListener = PeerListener(delegate: self)
     }
