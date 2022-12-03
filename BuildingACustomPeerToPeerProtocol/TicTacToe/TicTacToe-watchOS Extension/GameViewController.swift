@@ -58,6 +58,7 @@ class GameViewController: WKInterfaceController {
         presentAlert(withTitle: "Game Over", message: "\(string)", preferredStyle: .alert, actions: [alertAction])
     }
 
+    // Networking Function to select character
     func handleMyTurnSelectFamily() {
         // Disable the family the peer selects.
         repeat {
@@ -123,6 +124,7 @@ class GameViewController: WKInterfaceController {
         }
     }
 
+    // Contains Networking Function to ready connection
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
@@ -148,6 +150,7 @@ class GameViewController: WKInterfaceController {
     
     }
 
+    // Contains Networking Function to stop
     func stopGame() {
         if let connection = sharedConnection {
             connection.cancel()
@@ -156,6 +159,7 @@ class GameViewController: WKInterfaceController {
         self.pop()
     }
 
+    // Networking Function to send move 
     @IBAction func handleTap(sender: AnyObject) {
         if let tapGesture = sender as? WKTapGestureRecognizer {
             if tapGesture.numberOfTapsRequired == 1 {

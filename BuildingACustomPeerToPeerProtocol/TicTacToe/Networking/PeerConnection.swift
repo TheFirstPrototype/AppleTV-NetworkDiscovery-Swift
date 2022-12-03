@@ -136,7 +136,7 @@ class PeerConnection {
 		connection.send(content: character.data(using: .unicode), contentContext: context, isComplete: true, completion: .idempotent)
 	}
 
-	// Handle sending a "move" message.
+	// Key Function that Handles sending a "move" message string from each platform (iOS TV Watch).
 	func sendMove(_ move: String) {
 		guard let connection = connection else {
 			return

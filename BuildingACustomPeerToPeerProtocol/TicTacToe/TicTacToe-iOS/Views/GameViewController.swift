@@ -164,6 +164,7 @@ class GameViewController: UITableViewController {
 		}
 	}
 
+    // Contains Networking Function to ready connection
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -192,6 +193,7 @@ class GameViewController: UITableViewController {
 		}
 	}
 
+    // Networking Function - Send
 	@IBAction func characterPressed(_ sender: Any) {
 		if let button = sender as? UIButton,
 			let label = button.titleLabel,
@@ -221,6 +223,7 @@ class GameViewController: UITableViewController {
 		}
 	}
 
+    // Networking Function -Cancel
 	func stopGame() {
 		if let sharedConnection = sharedConnection {
 			sharedConnection.cancel()

@@ -34,6 +34,7 @@ class PasscodeViewController: UITableViewController {
 		}
 	}
 
+    // Networking Function
 	func joinPressed() {
 		hasPlayedGame = true
 		if let passcode = passcodeField.text,

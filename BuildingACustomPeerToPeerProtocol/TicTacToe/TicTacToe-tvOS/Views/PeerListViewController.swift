@@ -23,6 +23,7 @@ class PeerListViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "joinGameCell")
     }
 
+    // Networking Function to start
     func hostGameButton() async {
         // Check to see whether the device supports DDDevicePickerViewController.
         guard DDDevicePickerViewController.isSupported(.applicationService(name: "TicTacToe"),

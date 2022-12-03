@@ -57,6 +57,7 @@ class GameViewController: UITableViewController {
         resignLabel.text = "Exit"
     }
 
+    // Networking Function to Select Character
     func handleMyTurnSelectFamily() {
 
         // Disable the family the peer selects.
@@ -77,6 +78,7 @@ class GameViewController: UITableViewController {
         
     }
 
+    // Networking Function to send move
     func handleMyTurn() {
         if let character = selectedFamily?.emojiArray().randomElement(),
             let sceneView = sceneView,
@@ -175,6 +177,7 @@ class GameViewController: UITableViewController {
     
     }
 
+    // Networking Function to Stop
     func stopGame() {
         if let sharedConnection = sharedConnection {
             sharedConnection.cancel()
