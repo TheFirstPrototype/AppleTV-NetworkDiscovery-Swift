@@ -49,6 +49,16 @@
 		78C41FCC2269341D002616E1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 78C41FCB2269341D002616E1 /* GameScene.sks */; };
 		78C41FF222693B75002616E1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C41FF122693B75002616E1 /* GameScene.swift */; };
 		78C42019226A2E9A002616E1 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C42018226A2E9A002616E1 /* GameProtocol.swift */; };
+		9542ED56293C0752001B9157 /* SendingMessagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED55293C0752001B9157 /* SendingMessagesApp.swift */; };
+		9542ED58293C0752001B9157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED57293C0752001B9157 /* ContentView.swift */; };
+		9542ED5A293C0753001B9157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9542ED59293C0753001B9157 /* Assets.xcassets */; };
+		9542ED5D293C0753001B9157 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9542ED5C293C0753001B9157 /* Preview Assets.xcassets */; };
+		9542ED61293C0883001B9157 /* PeerListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C41FC02268EE40002616E1 /* PeerListener.swift */; };
+		9542ED62293C08AD001B9157 /* PeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C41FC72269218A002616E1 /* PeerConnection.swift */; };
+		9542ED64293C08BB001B9157 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C42018226A2E9A002616E1 /* GameProtocol.swift */; };
+		9542ED65293C08C0001B9157 /* NWParameters+InitWithPasscode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B405D2283766F00B543C3 /* NWParameters+InitWithPasscode.swift */; };
+		9542ED66293C08C6001B9157 /* PeerBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C41FC422690B50002616E1 /* PeerBrowser.swift */; };
+		9542ED68293C0955001B9157 /* DDevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED67293C0955001B9157 /* DDevicePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +143,12 @@
 		78C41FCB2269341D002616E1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		78C41FF122693B75002616E1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		78C42018226A2E9A002616E1 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		9542ED53293C0752001B9157 /* SendingMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendingMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9542ED55293C0752001B9157 /* SendingMessagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingMessagesApp.swift; sourceTree = "<group>"; };
+		9542ED57293C0752001B9157 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9542ED59293C0753001B9157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9542ED5C293C0753001B9157 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9542ED67293C0955001B9157 /* DDevicePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDevicePickerView.swift; sourceTree = "<group>"; };
 		97CE54E7C50BE7CADDEC21FC /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +169,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		78C41FA82268EB82002616E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9542ED50293C0752001B9157 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +291,7 @@
 				41A02EBE280FEA5500293EC8 /* TicTacToe-tvOS */,
 				4153D99328249FCE0084F009 /* TicTacToe-watchOS */,
 				4153D9A128249FD10084F009 /* TicTacToe-watchOS Extension */,
+				9542ED54293C0752001B9157 /* SendingMessages */,
 				78C41FAC2268EB82002616E1 /* Products */,
 				41C354A528115691000382FD /* Frameworks */,
 				14A1E7E36690608E99EF19D0 /* Configuration */,
@@ -282,6 +306,7 @@
 				41A02EBD280FEA5500293EC8 /* TicTacToe.app */,
 				4153D99228249FCE0084F009 /* TicTacToe.app */,
 				4153D99D28249FD10084F009 /* TicTacToe.appex */,
+				9542ED53293C0752001B9157 /* SendingMessages.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,6 +320,26 @@
 				78C41FBA2268EB83002616E1 /* iOS-Info.plist */,
 			);
 			path = "TicTacToe-iOS";
+			sourceTree = "<group>";
+		};
+		9542ED54293C0752001B9157 /* SendingMessages */ = {
+			isa = PBXGroup;
+			children = (
+				9542ED55293C0752001B9157 /* SendingMessagesApp.swift */,
+				9542ED57293C0752001B9157 /* ContentView.swift */,
+				9542ED59293C0753001B9157 /* Assets.xcassets */,
+				9542ED5B293C0753001B9157 /* Preview Content */,
+				9542ED67293C0955001B9157 /* DDevicePickerView.swift */,
+			);
+			path = SendingMessages;
+			sourceTree = "<group>";
+		};
+		9542ED5B293C0753001B9157 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9542ED5C293C0753001B9157 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +415,23 @@
 			productReference = 78C41FAB2268EB82002616E1 /* TicTacToe.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9542ED52293C0752001B9157 /* SendingMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9542ED60293C0753001B9157 /* Build configuration list for PBXNativeTarget "SendingMessages" */;
+			buildPhases = (
+				9542ED4F293C0752001B9157 /* Sources */,
+				9542ED50293C0752001B9157 /* Frameworks */,
+				9542ED51293C0752001B9157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendingMessages;
+			productName = SendingMessages;
+			productReference = 9542ED53293C0752001B9157 /* SendingMessages.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -377,7 +439,7 @@
 			isa = PBXProject;
 			attributes = {
 				DefaultBuildSystemTypeForWorkspace = Latest;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
@@ -392,6 +454,9 @@
 					};
 					78C41FAA2268EB82002616E1 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					9542ED52293C0752001B9157 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -412,6 +477,7 @@
 				41A02EBC280FEA5500293EC8 /* TicTacToe-tvOS */,
 				4153D99128249FCE0084F009 /* TicTacToe-watchOS */,
 				4153D99C28249FD10084F009 /* TicTacToe-watchOS Extension */,
+				9542ED52293C0752001B9157 /* SendingMessages */,
 			);
 		};
 /* End PBXProject section */
@@ -453,6 +519,15 @@
 				78C41FB92268EB83002616E1 /* LaunchScreen.storyboard in Resources */,
 				78C41FB62268EB83002616E1 /* Assets.xcassets in Resources */,
 				78C41FB42268EB82002616E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9542ED51293C0752001B9157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9542ED5D293C0753001B9157 /* Preview Assets.xcassets in Resources */,
+				9542ED5A293C0753001B9157 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +580,21 @@
 				78C41FC522690B50002616E1 /* PeerBrowser.swift in Sources */,
 				78C42019226A2E9A002616E1 /* GameProtocol.swift in Sources */,
 				78C41FC12268EE40002616E1 /* PeerListener.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9542ED4F293C0752001B9157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9542ED58293C0752001B9157 /* ContentView.swift in Sources */,
+				9542ED64293C08BB001B9157 /* GameProtocol.swift in Sources */,
+				9542ED56293C0752001B9157 /* SendingMessagesApp.swift in Sources */,
+				9542ED61293C0883001B9157 /* PeerListener.swift in Sources */,
+				9542ED65293C08C0001B9157 /* NWParameters+InitWithPasscode.swift in Sources */,
+				9542ED62293C08AD001B9157 /* PeerConnection.swift in Sources */,
+				9542ED66293C08C6001B9157 /* PeerBrowser.swift in Sources */,
+				9542ED68293C0955001B9157 /* DDevicePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,6 +1023,64 @@
 			};
 			name = Release;
 		};
+		9542ED5E293C0753001B9157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SendingMessages/Preview Content\"";
+				DEVELOPMENT_TEAM = RB9MZ6N697;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfp.rockpaperscissors.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Debug;
+		};
+		9542ED5F293C0753001B9157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SendingMessages/Preview Content\"";
+				DEVELOPMENT_TEAM = RB9MZ6N697;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfp.rockpaperscissors.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -977,6 +1125,15 @@
 			buildConfigurations = (
 				78C41FBE2268EB83002616E1 /* Debug */,
 				78C41FBF2268EB83002616E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9542ED60293C0753001B9157 /* Build configuration list for PBXNativeTarget "SendingMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9542ED5E293C0753001B9157 /* Debug */,
+				9542ED5F293C0753001B9157 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
