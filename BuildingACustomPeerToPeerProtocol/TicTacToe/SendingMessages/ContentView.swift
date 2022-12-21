@@ -10,10 +10,23 @@ import SwiftUI
 import DeviceDiscoveryUI
 
 struct ContentView: View {
-    @AppStorage("IsDevicePickerActive") var isDevicePickerActive:Bool = true
+    @AppStorage("IsDevicePickerActive") var isDevicePickerActive:Bool = false
     var body: some View {
-        if !isDevicePickerActive{
-            DDevicePickerView()
+        if isDevicePickerActive{
+            DevicePicker(.applicationService(name: "TicTacToe")) { endpoint in
+                print(endpoint)
+//                myDeviceManager.connectTo(endpoint: endpoint)
+            } label: {
+                Text("Connect to a local device.")
+            } fallback: {
+                Text("Not supported.")
+            } parameters: {
+                // This example uses the default application services parameters;
+                // however, you can add a NWProtocolFramer to provide application-level
+                // messaging.
+                .applicationService
+            }
+
         } else {
             VStack {
                 Text("Hello, world!")
@@ -36,20 +49,20 @@ struct ContentView: View {
             print("This device does not support DDDevicePickerViewController.")
             return
         }
-        isDevicePickerActive = false
+        isDevicePickerActive = true
         // Create the view controller for the device picker.
-        guard let devicePicker = await DDDevicePickerViewController(browseDescriptor: .applicationService(name: "TicTacToe"),
-                                                              parameters: applicationServiceParameters()) else {
-            print("Could not create device picker.")
-            return
-        }
-        
+//        guard let devicePicker = await DDDevicePickerViewController(browseDescriptor: .applicationService(name: "TicTacToe"),
+//                                                              parameters: applicationServiceParameters()) else {
+//            print("Could not create device picker.")
+//            return
+//        }
+//        
         // Show the network device picker as a full-screen, modal view.
 //        self.present(devicePicker, animated: true)
         
         do {
             // Receive an endpoint asynchronously.
-            let endpoint = try await devicePicker.endpoint
+//            let endpoint = try await devicePicker.endpoint
 //            sharedConnection = PeerConnection(endpoint: endpoint, delegate: self)
        } catch let error {
            // Handle any errors.

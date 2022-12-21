@@ -59,6 +59,9 @@
 		9542ED65293C08C0001B9157 /* NWParameters+InitWithPasscode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786B405D2283766F00B543C3 /* NWParameters+InitWithPasscode.swift */; };
 		9542ED66293C08C6001B9157 /* PeerBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C41FC422690B50002616E1 /* PeerBrowser.swift */; };
 		9542ED68293C0955001B9157 /* DDevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED67293C0955001B9157 /* DDevicePickerView.swift */; };
+		9542ED6A293C0F83001B9157 /* tvOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9542ED69293C0F83001B9157 /* tvOS-Info.plist */; };
+		9542ED6D293C1D5B001B9157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED57293C0752001B9157 /* ContentView.swift */; };
+		9542ED6E293C1D72001B9157 /* DDevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED67293C0955001B9157 /* DDevicePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +152,8 @@
 		9542ED59293C0753001B9157 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9542ED5C293C0753001B9157 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9542ED67293C0955001B9157 /* DDevicePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDevicePickerView.swift; sourceTree = "<group>"; };
+		9542ED69293C0F83001B9157 /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
+		9542ED6B293C16F4001B9157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		97CE54E7C50BE7CADDEC21FC /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,11 +330,13 @@
 		9542ED54293C0752001B9157 /* SendingMessages */ = {
 			isa = PBXGroup;
 			children = (
+				9542ED6B293C16F4001B9157 /* Info.plist */,
 				9542ED55293C0752001B9157 /* SendingMessagesApp.swift */,
 				9542ED57293C0752001B9157 /* ContentView.swift */,
 				9542ED59293C0753001B9157 /* Assets.xcassets */,
 				9542ED5B293C0753001B9157 /* Preview Content */,
 				9542ED67293C0955001B9157 /* DDevicePickerView.swift */,
+				9542ED69293C0F83001B9157 /* tvOS-Info.plist */,
 			);
 			path = SendingMessages;
 			sourceTree = "<group>";
@@ -526,6 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9542ED6A293C0F83001B9157 /* tvOS-Info.plist in Resources */,
 				9542ED5D293C0753001B9157 /* Preview Assets.xcassets in Resources */,
 				9542ED5A293C0753001B9157 /* Assets.xcassets in Resources */,
 			);
@@ -555,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A02ED5280FEDCB00293EC8 /* PeerBrowser.swift in Sources */,
+				9542ED6D293C1D5B001B9157 /* ContentView.swift in Sources */,
 				41A02ED9280FEDE000293EC8 /* GameProtocol.swift in Sources */,
 				41A02ED8280FEDDD00293EC8 /* NWParameters+InitWithPasscode.swift in Sources */,
 				41A02ED7280FEDD700293EC8 /* PeerConnection.swift in Sources */,
@@ -563,6 +572,7 @@
 				41A02EC6280FEA5500293EC8 /* GameScene.swift in Sources */,
 				41A02EC8280FEA5500293EC8 /* GameViewController.swift in Sources */,
 				41A02EC0280FEA5500293EC8 /* AppDelegate.swift in Sources */,
+				9542ED6E293C1D72001B9157 /* DDevicePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1045,7 @@
 				DEVELOPMENT_TEAM = RB9MZ6N697;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendingMessages/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1064,6 +1075,7 @@
 				DEVELOPMENT_TEAM = RB9MZ6N697;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SendingMessages/Info.plist;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
