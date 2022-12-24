@@ -16,21 +16,13 @@ public struct DDevicePickerView: UIViewControllerRepresentable {
     @AppStorage("IsDevicePickerActive") var isDevicePickerActive:Bool = false
 
     public init() {
-        // Create the view controller for the device picker.
-//        guard let devicePicker = DDDevicePickerViewController(browseDescriptor: .applicationService(name: "TicTacToe"),
-//                                                              parameters: applicationServiceParameters()) else {
-//            print("Could not create device picker.")
-//            return
-//        }
         let devicePicker = DDDevicePickerViewController(browseDescriptor: .applicationService(name: "TicTacToe"),
                                                               parameters: applicationServiceParameters())
         self.viewController = devicePicker!
-//        let endpoint = try await devicePicker!.endpoint
     }
 
     public func makeUIViewController(context: Context) -> DDDevicePickerViewController {
         let gkVC = viewController
-//        gkVC.gameCenterDelegate = context.coordinator
         return gkVC
     }
 
@@ -38,20 +30,4 @@ public struct DDevicePickerView: UIViewControllerRepresentable {
         return
     }
 
-//    public func makeCoordinator() -> GKCoordinator {
-//        return GKCoordinator(self)
-//    }
 }
-//
-//public class GKCoordinator: NSObject, DDevicePickerViewControllerDelegate {
-//    var view: GameCenterView
-//
-//    init(_ gkView: GameCenterView) {
-//        self.view = gkView
-//    }
-//
-//    public func devicePickerViewControllerDidFinish(_ devicePickerViewController: DDDevicePickerViewController) {
-//        devicePickerViewController.dismiss(animated: true, completion: nil)
-//        view.isGKActive = false
-//    }
-//}

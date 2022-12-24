@@ -49,6 +49,9 @@
 		78C41FCC2269341D002616E1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 78C41FCB2269341D002616E1 /* GameScene.sks */; };
 		78C41FF222693B75002616E1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C41FF122693B75002616E1 /* GameScene.swift */; };
 		78C42019226A2E9A002616E1 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C42018226A2E9A002616E1 /* GameProtocol.swift */; };
+		95211D9F2956354F005F2449 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95211D9E2956354F005F2449 /* HomeView.swift */; };
+		95211DA129569320005F2449 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95211DA029569320005F2449 /* GameView.swift */; };
+		95211DA3295769D6005F2449 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95211DA2295769D6005F2449 /* GameState.swift */; };
 		9542ED56293C0752001B9157 /* SendingMessagesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED55293C0752001B9157 /* SendingMessagesApp.swift */; };
 		9542ED58293C0752001B9157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED57293C0752001B9157 /* ContentView.swift */; };
 		9542ED5A293C0753001B9157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9542ED59293C0753001B9157 /* Assets.xcassets */; };
@@ -146,6 +149,9 @@
 		78C41FCB2269341D002616E1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		78C41FF122693B75002616E1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		78C42018226A2E9A002616E1 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		95211D9E2956354F005F2449 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		95211DA029569320005F2449 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		95211DA2295769D6005F2449 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		9542ED53293C0752001B9157 /* SendingMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendingMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9542ED55293C0752001B9157 /* SendingMessagesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingMessagesApp.swift; sourceTree = "<group>"; };
 		9542ED57293C0752001B9157 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -337,6 +343,9 @@
 				9542ED5B293C0753001B9157 /* Preview Content */,
 				9542ED67293C0955001B9157 /* DDevicePickerView.swift */,
 				9542ED69293C0F83001B9157 /* tvOS-Info.plist */,
+				95211D9E2956354F005F2449 /* HomeView.swift */,
+				95211DA029569320005F2449 /* GameView.swift */,
+				95211DA2295769D6005F2449 /* GameState.swift */,
 			);
 			path = SendingMessages;
 			sourceTree = "<group>";
@@ -597,14 +606,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95211D9F2956354F005F2449 /* HomeView.swift in Sources */,
 				9542ED58293C0752001B9157 /* ContentView.swift in Sources */,
 				9542ED64293C08BB001B9157 /* GameProtocol.swift in Sources */,
 				9542ED56293C0752001B9157 /* SendingMessagesApp.swift in Sources */,
+				95211DA129569320005F2449 /* GameView.swift in Sources */,
 				9542ED61293C0883001B9157 /* PeerListener.swift in Sources */,
 				9542ED65293C08C0001B9157 /* NWParameters+InitWithPasscode.swift in Sources */,
 				9542ED62293C08AD001B9157 /* PeerConnection.swift in Sources */,
 				9542ED66293C08C6001B9157 /* PeerBrowser.swift in Sources */,
 				9542ED68293C0955001B9157 /* DDevicePickerView.swift in Sources */,
+				95211DA3295769D6005F2449 /* GameState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

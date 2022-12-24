@@ -18,6 +18,16 @@
 					<string>watchOS</string>
 				</array>
 			</dict>
+			<dict>
+				<key>NSApplicationServiceIdentifier</key>
+				<string>MyApp-Workout</string>
+				<key>NSApplicationServiceUsageDescription</key>
+				<string>Connects to a watchOS app to read heart-rate and active calories burned from a workout session.</string>
+				<key>NSApplicationServicePlatformSupport</key>
+				<array>
+					<string>watchOS</string>
+				</array>
+			</dict>
 		</array>
 	</dict>
 </dict>

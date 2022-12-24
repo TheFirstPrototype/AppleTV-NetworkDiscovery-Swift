@@ -15,8 +15,13 @@ struct ContentView: View {
     @State var nwEndpoint:NWEndpoint?
     @State var initiatedConnection:Bool = false
     @AppStorage("IsDevicePickerActive") var isDevicePickerActive:Bool = false
+    @State var firstPlayer:NWEndpoint = NWEndpoint.unix(path: "")
+    @AppStorage("IsDeviceConnected") var isDeviceConnected = false
     var body: some View {
-        if isDevicePickerActive{
+        if isDeviceConnected{
+            GameView()
+        }
+        else if !isDevicePickerActive{
             DevicePicker(.applicationService(name: "TicTacToe")) { endpoint in
                 print(endpoint)
                 let nwConnection = NWConnection(to: endpoint, using: applicationServiceParameters())
@@ -24,11 +29,48 @@ struct ContentView: View {
                 initiatedConnection = true
                 startConnection()
 
+                firstPlayer = endpoint
+                isDeviceConnected = true
 //                myDeviceManager.connectTo(endpoint: endpoint)
             } label: {
-                Text("Connect to a local device.")
+                VStack {
+                    HStack{
+                        Image("CrissCross")
+                            .padding([.top, .leading], 50.0)
+                        Spacer()
+                    }
+                    Spacer()
+                    Button{
+                        Task{
+                            print("Do work here")
+                            isDevicePickerActive = false
+                        }
+                    }label:{
+//                        Text("Search for device")
+                        Text("START GAME")
+                    }
+                    Spacer()
+                }
+                .padding()
             } fallback: {
-                Text("Not supported.")
+                VStack {
+                    HStack{
+                        Image("CrissCross")
+                            .padding([.top, .leading], 50.0)
+                        Spacer()
+                    }
+                    Spacer()
+                    Button{
+                        Task{
+                            print("Do work here")
+                            isDevicePickerActive = false
+                        }
+                    }label:{
+                        Text("Device not supported")
+                    }
+                    Spacer()
+                }
+                .padding()
             } parameters: {
                 // This example uses the default application services parameters;
                 // however, you can add a NWProtocolFramer to provide application-level
@@ -38,15 +80,25 @@ struct ContentView: View {
 
         } else {
             VStack {
-                Text("Hello, world!")
+                HStack{
+                    Image("CrissCross")
+                        .padding([.top, .leading], 50.0)
+                    Spacer()
+                }
+                Spacer()
                 Button{
                     Task{
                         print("Do work here")
-                        try await hostGameButton()
+//                        TODO: Undo this
+//                        isDevicePickerActive = true
+                        isDeviceConnected = true
                     }
                 }label:{
-                    Text("Search")
+                    Text(isDeviceConnected ? "Device Connected" : "Connect Device")
                 }
+                Spacer()
+                Button("Search for device", role: .none, action: { print("H")})
+//                    .disabled(!isDeviceConnected)
             }
             .padding()
         }
