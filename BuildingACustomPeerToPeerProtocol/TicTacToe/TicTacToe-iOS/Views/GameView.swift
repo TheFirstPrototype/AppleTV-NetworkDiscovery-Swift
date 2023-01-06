@@ -1,10 +1,9 @@
 //
 //  GameView.swift
-//  SendingMessages
+//  TicTacToe
 //
-//  Created by Saamer Admin on 12/23/22.
-//  Copyright © 2022 Apple. All rights reserved.
-//
+//  Created by Saamer Admin on 1/6/23.
+//  Copyright © 2023 Apple. All rights reserved.
 
 import SwiftUI
 
@@ -44,31 +43,32 @@ struct GameView: View {
 //                    VStack(alignment: .trailing){
 //                        Rectangle()
 //                            .fill(.red)
-//                            .frame(width: 500, height: 10.0)
-//                            .padding(80)
+//                            .frame(width: 200, height: 3.0)
+//                            .padding(40)
 //                        Rectangle()
 //                            .fill(.red)
-//                            .frame(width: 500, height: 10.0)
-//                            .padding(80)
+//                            .frame(width: 200, height: 3.0)
+//                            .padding(40)
 //                    }
                     HStack(alignment: .bottom){
                         Rectangle()
                             .fill(.blue)
-                            .frame(width: 10.0, height: 500)
+                            .frame(width: 3.0, height: 200)
                             .padding(40)
                         Rectangle()
                             .fill(.blue)
-                            .frame(width: 10.0, height: 500)
+                            .frame(width: 3.0, height: 200)
                             .padding(40)
                     }
                     Grid(alignment: .topTrailing) {
                         GridRow {
                             // if there's no value in that array element already, make that location a button that can be tapped
                             if playState.the0X0 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the0X0 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the0X0)
@@ -76,10 +76,12 @@ struct GameView: View {
                                     .padding()
                             }
                             if playState.the0X1 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the0X1 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
+                                
                                 .padding()
                             } else {
                                 Text(playState.the0X1)
@@ -87,10 +89,11 @@ struct GameView: View {
                                     .padding()
                             }
                             if playState.the0X2 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the0X2 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the0X2)
@@ -103,10 +106,11 @@ struct GameView: View {
                             .gridCellUnsizedAxes(.horizontal)
                         GridRow(alignment: .top) {
                             if playState.the1X0 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the1X0 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the1X0)
@@ -114,10 +118,11 @@ struct GameView: View {
                                     .padding()
                             }
                             if playState.the1X1 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the1X1 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the1X1)
@@ -125,10 +130,11 @@ struct GameView: View {
                                     .padding()
                             }
                             if playState.the1X2 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the1X2 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the1X2)
@@ -141,10 +147,11 @@ struct GameView: View {
                             .gridCellUnsizedAxes(.horizontal)
                         GridRow {
                             if playState.the2X0 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the2X0 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the2X0)
@@ -152,10 +159,12 @@ struct GameView: View {
                                     .padding()
                             }
                             if playState.the2X1 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the2X1 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
+
                                 .padding()
                             } else {
                                 Text(playState.the2X1)
@@ -163,10 +172,11 @@ struct GameView: View {
                                     .padding()
                             }
                             if playState.the2X2 == ""{
-                                Button("", action: {
+                                Button(" ", action: {
                                     playState.the2X2 = PopulateValue()
                                     CheckGameStatus()
                                 })
+                                .buttonStyle(.bordered)
                                 .padding()
                             } else {
                                 Text(playState.the2X2)

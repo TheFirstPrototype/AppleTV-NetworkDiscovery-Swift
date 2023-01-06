@@ -1,12 +1,12 @@
 //
 //  AdHocHomeView.swift
-//  SendingMessages
+//  TicTacToe
 //
-//  Created by Saamer Admin on 12/24/22.
-//  Copyright © 2022 Apple. All rights reserved.
+//  Created by Saamer Admin on 1/6/23.
+//  Copyright © 2023 Apple. All rights reserved.
 //
+
 import SwiftUI
-import DeviceDiscoveryUI
 
 struct AdHocHomeView: View {
     @AppStorage("IsDeviceConnected") var isDeviceConnected = false
@@ -20,21 +20,20 @@ struct AdHocHomeView: View {
                         .padding([.top, .leading], 50.0)
                     Spacer()
                 }
+                Text("This app works best with a friend and an Apple TV running tvOS 16 in multiplayer mode, or you can practice while you wait")
+
                 Spacer()
-                Text("Play using your Apple TV remote only")
+                Text("Play using your iPhone only")
                 Button{
                     Task{
                         print("Do work here")
-                        //                        TODO: Undo this
-                        //                        isDevicePickerActive = true
                         isDeviceConnected = true
                     }
                 }label:{
                     Text("Start AdHoc Game")
                 }
                 Spacer()
-//                Button("Search for device", role: .none, action: { print("H")})
-                //                    .disabled(!isDeviceConnected)
+                Text("Waiting for Apple TV connection...")
             }
             .padding()
         }

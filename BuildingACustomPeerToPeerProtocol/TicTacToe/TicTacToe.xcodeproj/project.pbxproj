@@ -66,6 +66,10 @@
 		9542ED6D293C1D5B001B9157 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED57293C0752001B9157 /* ContentView.swift */; };
 		9542ED6E293C1D72001B9157 /* DDevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9542ED67293C0955001B9157 /* DDevicePickerView.swift */; };
 		958DF35E2957ED9700EF4EC2 /* AdHocHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958DF35D2957ED9700EF4EC2 /* AdHocHomeView.swift */; };
+		95D378E12967F7F5002078DD /* TicTacToe-iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D378E02967F7F5002078DD /* TicTacToe-iOSApp.swift */; };
+		95D378E32967FEA1002078DD /* AdHocHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D378E22967FEA0002078DD /* AdHocHomeView.swift */; };
+		95D378E52967FF64002078DD /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95211DA2295769D6005F2449 /* GameState.swift */; };
+		95D378E7296804F3002078DD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D378E6296804F3002078DD /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +166,9 @@
 		9542ED69293C0F83001B9157 /* tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tvOS-Info.plist"; sourceTree = "<group>"; };
 		9542ED6B293C16F4001B9157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		958DF35D2957ED9700EF4EC2 /* AdHocHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHocHomeView.swift; sourceTree = "<group>"; };
+		95D378E02967F7F5002078DD /* TicTacToe-iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TicTacToe-iOSApp.swift"; sourceTree = "<group>"; };
+		95D378E22967FEA0002078DD /* AdHocHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdHocHomeView.swift; sourceTree = "<group>"; };
+		95D378E6296804F3002078DD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		97CE54E7C50BE7CADDEC21FC /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +286,8 @@
 				78C41FCB2269341D002616E1 /* GameScene.sks */,
 				78C41FB22268EB82002616E1 /* Main.storyboard */,
 				78C41FB72268EB83002616E1 /* LaunchScreen.storyboard */,
+				95D378E22967FEA0002078DD /* AdHocHomeView.swift */,
+				95D378E6296804F3002078DD /* GameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +340,7 @@
 				78C41FAE2268EB82002616E1 /* AppDelegate.swift */,
 				78C41FB52268EB83002616E1 /* Assets.xcassets */,
 				78C41FBA2268EB83002616E1 /* iOS-Info.plist */,
+				95D378E02967F7F5002078DD /* TicTacToe-iOSApp.swift */,
 			);
 			path = "TicTacToe-iOS";
 			sourceTree = "<group>";
@@ -592,11 +602,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D378E12967F7F5002078DD /* TicTacToe-iOSApp.swift in Sources */,
 				78C41FB12268EB82002616E1 /* PeerListViewController.swift in Sources */,
 				78C41FAF2268EB82002616E1 /* AppDelegate.swift in Sources */,
 				783EB002227CE820009C04B2 /* PasscodeViewController.swift in Sources */,
 				78C41FF222693B75002616E1 /* GameScene.swift in Sources */,
+				95D378E32967FEA1002078DD /* AdHocHomeView.swift in Sources */,
+				95D378E7296804F3002078DD /* GameView.swift in Sources */,
 				78C41FC32268F6C1002616E1 /* GameViewController.swift in Sources */,
+				95D378E52967FF64002078DD /* GameState.swift in Sources */,
 				78C41FC82269218A002616E1 /* PeerConnection.swift in Sources */,
 				786B405E2283766F00B543C3 /* NWParameters+InitWithPasscode.swift in Sources */,
 				78C41FC522690B50002616E1 /* PeerBrowser.swift in Sources */,
