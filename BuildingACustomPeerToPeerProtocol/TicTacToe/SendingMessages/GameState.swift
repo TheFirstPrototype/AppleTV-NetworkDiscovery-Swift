@@ -10,9 +10,7 @@ import Foundation
 
 // MARK: - Welcome
 struct GameState: Codable {
-    var the0X0, the0X1, the0X2, the1X0: String
-    var the1X1, the1X2, the2X0, the2X1: String
-    var the2X2: String
+    var the0X0, the0X1, the0X2, the1X0, the1X1, the1X2, the2X0, the2X1, the2X2: String
 
 //    enum CodingKeys: String, CodingKey {
 //        case the0X0 = "0x0"

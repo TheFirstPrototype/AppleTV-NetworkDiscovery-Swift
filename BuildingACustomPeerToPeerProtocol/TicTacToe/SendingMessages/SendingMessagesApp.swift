@@ -12,7 +12,7 @@ import SwiftUI
 struct SendingMessagesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AdHocHomeView()
         }
     }
 }
